@@ -29,7 +29,7 @@ class Comment(Base):
     user_id = Column(Integer, ForeignKey('user.id'))
     user = relationship(User)
     post_id = Column(Integer, ForeignKey('post.id'))
-    post = relationship(Post)
+    post = relationship(Post)    
 
 class Follower(Base):
     __tablename__ = 'follower'
@@ -37,6 +37,13 @@ class Follower(Base):
     follower_id = Column(Integer, ForeignKey('user.id'))
     following_id = Column(Integer, ForeignKey('user.id'))
     user = relationship(User)
+
+class Media(Base):
+    __tablename__ = 'media'
+    id = Column(Integer, primary_key=True)
+    url = Column(String(250), nullable=False)
+    post_id = Column(Integer, ForeignKey('post.id'))
+    post = relationship(Post)
 
     def to_dict(self):
         return {}

@@ -1,3 +1,13 @@
+# Diagram database model
+
+To recreate the Instagram database diagram we initially used `quick data base diagrams` which allows us to
+make the tables intuitively, in them `User`, `Post`, `Comment`, `Follower` and `Media` were established, these represent the
+system in which they will be connected by `Primary_key` and `ForeignKey` linking to each other. 
+
+<img src="/img/IG.jpg" alt="diagram"/>
+
+
+
 # Create the database model for Instagram
 
 **Important**: To do this activity you need to `fork` this repo into your **Github** account and then open the forked repo on Gitpod.
