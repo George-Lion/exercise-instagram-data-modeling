@@ -1,3 +1,12 @@
+
+# Modelo de base de datos de diagrama
+
+Para recrear el diagrama de la base de datos de Instagram, inicialmente usamos `diagramas de base de datos rápidos` que nos permite
+realizar las tablas de manera intuitiva, en ellas se establecieron `Usuario`, `Publicación`, `Comentario`, `Seguidor` y `Medios`, estas representan el
+sistema en el que estarán conectados por `Primary_key` y `ForeignKey` enlazando entre sí.
+
+<img src="/img/IG.jpg" alt="diagrama"/>
+
 # Crea el modelo de base de datos para Instagram
 
 **Importante**: Para realizar esta actividad necesitas hacer un `fork` de este repo en tu cuenta de **Github** y luego, abrir el *fork* en Gitpod.
